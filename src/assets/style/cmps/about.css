@@ -1,0 +1,29 @@
+.about {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 2rem;
+    align-items: center;
+    justify-content: center;
+}
+
+.about .main-profile-img {
+    max-width: 70%;
+    object-fit: cover;
+    border-radius: 80% 60% 50% 70% / 40% 60% 70% 80%;
+}
+
+.about .logo {
+    display: flex;
+    flex-direction: column;
+    place-items: center;
+}
+
+.about .logo img {
+    max-width: 12rem;
+}
+
+.about .logo p {
+    font-family: Tangerine-Bold;
+    font-size: 4rem;
+    margin: 0;
+}

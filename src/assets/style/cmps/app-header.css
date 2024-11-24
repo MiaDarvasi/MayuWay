@@ -1,0 +1,36 @@
+.app-header {
+    position: sticky;
+    top: 0;
+
+    display: grid;
+    grid-template-columns: minmax(20px, 1fr) minmax(auto, 1200px) minmax(20px, 1fr);
+
+    font-family: Amatic-Regular;
+    background-color: rgba(255, 255, 255, 30%);
+    margin-block-end: 2rem;
+}
+
+.app-header>* {
+    grid-column: 2;
+}
+
+.app-header .app-header-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.app-header .logo {
+    max-height: 2rem;
+    width: auto;
+
+    margin-block: 0.5rem;
+}
+
+.app-header nav {
+    display: flex;
+    gap: 2rem;
+
+    font-size: 1.4rem;
+
+}
