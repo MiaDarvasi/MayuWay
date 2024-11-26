@@ -19,9 +19,9 @@ body {
     grid-template-columns: minmax(20px, 1fr) minmax(auto, 1200px) minmax(20px, 1fr);
     
     font-family: Montserrat-Regular;
-    color: black;
+    color: var(--main-dark);
 
-    background: linear-gradient(to right, var(--main1) 10%, var(--main3) 90%);
+    background: linear-gradient(to right, var(--main3) 10%, var(--main1) 90%);
 }
 
 .App>* {
@@ -29,7 +29,7 @@ body {
 }
 
 .full {
-    grid-column: 1 / 4;
+    grid-column: 1 / -1;
 }
 
 ul,

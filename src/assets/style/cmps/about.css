@@ -1,29 +1,79 @@
 .about {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
+    /* display: grid;
+    grid-template-columns: 1fr 2fr; */
+}
+
+.about .about-top {
+    display: flex;
     gap: 2rem;
     align-items: center;
-    justify-content: center;
 }
 
-.about .main-profile-img {
-    max-width: 70%;
-    object-fit: cover;
-    border-radius: 80% 60% 50% 70% / 40% 60% 70% 80%;
+.about .about-title {
+    display: flex;
+    flex-direction: column;
+    place-items: start;
+    gap: 0.5rem;
 }
 
-.about .logo {
+.about .about-title-content {
     display: flex;
     flex-direction: column;
     place-items: center;
+    gap: 0.5rem;
 }
 
-.about .logo img {
-    max-width: 12rem;
-}
-
-.about .logo p {
-    font-family: Tangerine-Bold;
-    font-size: 4rem;
+.about .about-title-content p {
+    font-family: ClickerScript-Regular;
+    font-size: 2.5rem;
     margin: 0;
+}
+
+.about .about-social {
+    display: flex;
+    place-items: center;
+    gap: 0.7rem;
+}
+
+.about .about-social img {
+    height: 2.5rem;
+    /* background-color: rgba(36, 28, 28, 70%); */
+    background-color: var(--main-dark);
+    border-radius: 50%;
+    padding: 0.4rem;
+}
+
+.about .logo {
+    max-width: 20rem;
+}
+
+.about .main-profile-img {
+    max-width: 40%;
+    object-fit: cover;
+    /* border-radius: 60% 50% 30% 70% / 50% 70% 40% 60%; */
+    /* clip-path: ellipse(70% 50% at 50% 50%); */
+    border-radius: 50% 60% 60% 30% / 50% 60% 40% 70%;
+}
+
+.about .mayu-catchphrase {
+    font-family: Amatic-Bold;
+    font-size: 2.5rem;
+    text-align: center;
+    margin-block: 2rem;
+}
+
+.about .about-sum-content .about-sum {
+    margin: 0;
+    text-align: center;
+    font-family: Fredoka-Light;
+    font-size: 1rem;
+}
+
+.about .about-sum-content .about-sum-title {
+    font-family: Amatic-Bold;
+    font-size: 2rem;
+    text-align: center;
+    /* margin: 0; */
+    margin-block-start: 2rem;
+    margin-block-end: 1rem;
 }

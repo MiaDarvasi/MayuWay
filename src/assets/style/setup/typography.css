@@ -1,13 +1,8 @@
 /* Logo */
 
 @font-face {
-    font-family: Tangerine-Bold;
-    src: url(../../fonts/Tangerine/Tangerine-Bold.ttf);
-}
-
-@font-face {
-    font-family: Tangerine-Regular;
-    src: url(../../fonts/Tangerine/Tangerine-Regular.ttf);
+    font-family: ClickerScript-Regular;
+    src: url(../../fonts/Clicker/ClickerScript-Regular.ttf);
 }
 
 
@@ -41,6 +36,8 @@
     font-family: Fredoka-Regular;
     src: url(../../fonts/Fredoka/Fredoka-Regular.ttf);
 }
+
+
 
 
 /* OLDDD */
