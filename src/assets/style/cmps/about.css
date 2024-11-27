@@ -59,16 +59,18 @@
     max-width: 100%;
     object-fit: cover;
     aspect-ratio: 3/2;
-    /* border-radius: 50% 60% 60% 30% / 50% 60% 40% 70%; */
     border-radius: 20px;
     object-position: bottom;
+    /* border-radius: 50% 60% 60% 30% / 50% 60% 40% 70%; */
     /* clip-path: ellipse(50% 99% at 50% 100%); */
+    mask-image: linear-gradient(to right, rgba(0, 0, 0, 1) 0%, rgba(0, 0, 0, 0) 100%);
+    -webkit-mask-image: linear-gradient(to right, rgba(0, 0, 0, 1) 0%, rgba(0, 0, 0, 0) 100%);
 }
 
 .about .mayu-catchphrase {
     font-family: Amatic-Bold;
     font-size: 2.5rem;
-    text-align: center;
+    /* text-align: center; */
     margin: 0;
     /* margin-block: 2rem; */
 }
@@ -103,15 +105,14 @@
     height: 100%;
     aspect-ratio: 1/1;
     object-fit: cover;
-    object-position: bottom;
+    object-position: center;
     border-radius: 50%;
-    /* clip-path: ellipse(80% 90% at 50% 100%); */
 }
 
-/* .about .about-gallery img:first-of-type {
-    border-radius: 50% 30% 70% 50% / 40% 60% 50% 30%;
+.about .about-gallery img:first-of-type {
+    object-position: left;    
 }
 
 .about .about-gallery img:nth-of-type(2) {
-    border-radius: 50% 40% 60% 30% / 70% 50% 30% 50%;
-} */
+    object-position: right;    
+}

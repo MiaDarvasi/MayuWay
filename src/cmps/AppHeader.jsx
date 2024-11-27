@@ -25,7 +25,7 @@ export function AppHeader() {
     return (
         <section className={`app-header full ${scrolled ? 'scrolled' : ''}`}>
             <section className="app-header-content">
-                <img className="logo" src={logo} alt="Logo" />
+                <Link to={"/"}><img className="logo" src={logo} alt="Logo" /></Link>
                 <nav>
                     <a href="#connect">דברו איתי</a>
                     <a>המלצות שלי</a>

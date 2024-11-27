@@ -21,7 +21,10 @@ body {
     font-family: Montserrat-Regular;
     color: var(--main-dark);
 
-    background: linear-gradient(to right, var(--main3) 10%, var(--main1) 90%);
+    /* background: linear-gradient(to right, var(--main3) 10%, var(--main1) 90%); */
+    /* background: linear-gradient(to right, rgb(250, 222, 200) 10%, rgb(252, 245, 240) 90%); */
+    /* background: linear-gradient(to right, rgb(250, 222, 200) 10%, rgb(244, 255, 239) 90%); */
+    background: linear-gradient(to right, rgb(250, 222, 200) 10%, rgb(255, 253, 239) 90%);
 }
 
 .App>* {

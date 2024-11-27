@@ -1,0 +1,73 @@
+.study {
+    display: flex;
+    flex-direction: column;
+    gap: 3rem;
+    place-items: center;
+    margin-block-start: 7rem;
+}
+
+.study h1,
+.study h2,
+.study h3,
+.study p {
+    margin: 0;
+}
+
+.study h1 {
+    font-family: Amatic-Bold;
+    font-size: 2rem;
+}
+
+.study .study-butterfly {
+    max-width: 3rem;
+    height: auto;
+}
+
+.study ul {
+    display: grid;
+    grid-template-columns: 1fr;
+    place-items: center;
+    gap: 2rem;
+}
+
+.study ul li {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    place-items: center;
+}
+
+.study ul li img {
+    width: 100%;
+    max-height: 350px;
+    object-fit: cover;
+    mask-image: linear-gradient(to right, rgba(0, 0, 0, 0) 10%, rgba(0, 0, 0, 1) 60%, rgba(0, 0, 0, 0) 90%);
+    -webkit-mask-image: linear-gradient(to right, rgba(0, 0, 0, 0) 10%, rgba(0, 0, 0, 1) 60%, rgba(0, 0, 0, 0) 90%);
+}
+
+.study ul li .top-img-position {
+    object-position: top;
+}
+
+.study ul li h2 {
+    font-family: Amatic-Regular;
+    font-size: 1.5rem;
+    margin-block-start: 1rem;
+}
+
+.study ul li h3 {
+    font-family: Amatic-Regular;
+    font-size: 1rem;
+}
+
+.study ul li p {
+    font-family: Fredoka-Light;
+    max-width: 70%;
+}
+
+.study ul li .study-txt {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    place-items: center;
+}

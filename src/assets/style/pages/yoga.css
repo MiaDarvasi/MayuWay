@@ -1,0 +1,56 @@
+.yoga {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.yoga ul {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 2rem;
+}
+
+.yoga ul li {
+    text-align: center;
+}
+
+.yoga ul li p {
+    font-family: Fredoka-Light;
+}
+
+.yoga ul li img {
+    max-width: 100%;
+    height: auto;
+    max-height: 250px;
+    object-fit: contain;
+    clip-path: ellipse(50% 70% at 50% 50%);
+}
+
+.yoga ul li .hata {
+    border-radius: 50% 30% 60% 20% / 40% 80% 30% 50%;
+}
+
+.yoga ul li .ashtanga {
+    border-radius: 70% 40% 90% 10% / 60% 20% 80% 30%;
+}
+
+.yoga ul li .viniasa {
+    border-radius: 60% 10% 80% 40% / 50% 70% 30% 60%;
+}
+
+.yoga h1 {
+    font-family: Amatic-Regular;
+    margin: 0;
+    font-size: 1.5rem;
+}
+
+.yoga .yoga-title {
+    font-family: Amatic-Bold;
+    font-size: 2.5rem;
+    margin-block-end: 2rem;
+}
+
+.yoga .yoga-butterfly {
+    max-width: 3rem;
+    height: auto;
+}

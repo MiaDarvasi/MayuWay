@@ -39,3 +39,8 @@
     font-family: Montserrat-Light;
     font-family: Fredoka-Light;
 }
+
+.connect .connect-butterfly {
+    max-width: 3rem;
+    height: auto;
+}
