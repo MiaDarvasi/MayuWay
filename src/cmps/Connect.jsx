@@ -9,7 +9,7 @@ export function Connect() {
         <img className="connect-butterfly" src={butterfly} />
         <h1>דברו איתי</h1>
         <section>
-            <p>Maya Weissman | מאיה וויסמן</p>
+            <p>Maya Waisman | מאיה וויסמן</p>
             <p>maya.waisman01@gmail.com</p>
         </section>
         <section className="connect-social">

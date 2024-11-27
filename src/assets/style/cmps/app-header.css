@@ -77,3 +77,60 @@
     visibility: visible;
     opacity: 1;
 }
+
+.hamburger-icon {
+    display: none;
+    font-size: 2rem;
+}
+
+.hamburger-icon:hover {
+    cursor: pointer;
+}
+
+.dropdown-menu {
+    z-index: 10;
+    position: fixed;
+    right: 0;
+    top: 5rem;
+    background-color: rgb(255, 255, 245);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.dropdown-menu hr {
+    width: 90%;
+    border: none;
+    border-bottom: 0.5px solid var(--main-dark);
+    margin: 0;
+    margin: auto;
+}
+
+.menu-items {
+    height: 100%;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+
+.menu-items a {
+    padding: 1rem;
+    padding-inline: 2rem;
+}
+
+.menu-items a:hover {
+    height: 100%;
+    cursor: pointer;
+    background-color: rgb(253, 253, 229);
+}
+
+@media (max-width: 700px) {
+    .app-header nav {
+        display: none;
+    }
+
+    .hamburger-icon {
+        display: block;
+    }
+}
