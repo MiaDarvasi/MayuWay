@@ -1,9 +1,12 @@
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 
+
+import { HomePage } from './pages/HomePage.jsx'
+import { Yoga } from './pages/Yoga.jsx';
+
 import { AppHeader } from './cmps/AppHeader.jsx'
 import { Connect } from './cmps/Connect.jsx'
 
-import { HomePage } from './pages/HomePage.jsx'
 import { ScrollToTop } from './cmps/ScrollToTop.jsx';
 
 function App() {
@@ -14,8 +17,7 @@ function App() {
         <AppHeader />
         <Routes>
           <Route path="/" element={<HomePage />} />
-          {/* <Route path="/abnb" element={<AbnbDetails />} />
-          <Route path="/appsus" element={<AppsusDetails />} /> */}
+          <Route path="/yoga" element={<Yoga />} />
         </Routes>
         <Connect />
       </div>

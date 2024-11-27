@@ -1,10 +1,13 @@
 .about {
-    /* display: grid;
-    grid-template-columns: 1fr 2fr; */
+    display: flex;
+    flex-direction: column;
+    gap: 3rem;
+    place-items: center;
 }
 
 .about .about-top {
-    display: flex;
+    display: grid;
+    grid-template-columns: 2fr 1fr;
     gap: 2rem;
     align-items: center;
 }
@@ -37,10 +40,15 @@
 
 .about .about-social img {
     height: 2.5rem;
-    /* background-color: rgba(36, 28, 28, 70%); */
     background-color: var(--main-dark);
     border-radius: 50%;
     padding: 0.4rem;
+    transition: 0.4s;
+}
+
+.about .about-social img:hover {
+    background-color: rgb(72, 112, 67);
+    cursor: pointer;
 }
 
 .about .logo {
@@ -48,18 +56,21 @@
 }
 
 .about .main-profile-img {
-    max-width: 40%;
+    max-width: 100%;
     object-fit: cover;
-    /* border-radius: 60% 50% 30% 70% / 50% 70% 40% 60%; */
-    /* clip-path: ellipse(70% 50% at 50% 50%); */
-    border-radius: 50% 60% 60% 30% / 50% 60% 40% 70%;
+    aspect-ratio: 3/2;
+    /* border-radius: 50% 60% 60% 30% / 50% 60% 40% 70%; */
+    border-radius: 20px;
+    object-position: bottom;
+    /* clip-path: ellipse(50% 99% at 50% 100%); */
 }
 
 .about .mayu-catchphrase {
     font-family: Amatic-Bold;
     font-size: 2.5rem;
     text-align: center;
-    margin-block: 2rem;
+    margin: 0;
+    /* margin-block: 2rem; */
 }
 
 .about .about-sum-content .about-sum {
@@ -73,7 +84,34 @@
     font-family: Amatic-Bold;
     font-size: 2rem;
     text-align: center;
-    /* margin: 0; */
-    margin-block-start: 2rem;
-    margin-block-end: 1rem;
+    margin: 0;
 }
+
+.about .about-butterfly {
+    max-width: 3rem;
+    height: auto;
+}
+
+.about .about-gallery {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 1rem;
+}
+
+.about .about-gallery img {
+    max-width: 100%;
+    height: 100%;
+    aspect-ratio: 1/1;
+    object-fit: cover;
+    object-position: bottom;
+    border-radius: 50%;
+    /* clip-path: ellipse(80% 90% at 50% 100%); */
+}
+
+/* .about .about-gallery img:first-of-type {
+    border-radius: 50% 30% 70% 50% / 40% 60% 50% 30%;
+}
+
+.about .about-gallery img:nth-of-type(2) {
+    border-radius: 50% 40% 60% 30% / 70% 50% 30% 50%;
+} */
