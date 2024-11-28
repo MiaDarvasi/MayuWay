@@ -16,10 +16,30 @@ import butterfly from "../assets/imgs/butterfly.png";
 
 import ig from "../assets/imgs/icons/ig.svg";
 import whatsup from "../assets/imgs/icons/whatsup.svg";
+import { useEffect, useState } from "react";
 
 
 
 export function About() {
+
+    useEffect(() => {
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('fadeInUp');
+                } else {
+                    entry.target.classList.remove('fadeInUp');
+                }
+            });
+        }, { threshold: 0.2 });  // 20% of the section must be in view to trigger
+
+        const sections = document.querySelectorAll('.animated');
+        sections.forEach(section => observer.observe(section));
+
+        return () => observer.disconnect();
+    }, []);
+
+
     return <section className="about" id="about">
         <section className="about-top">
             <img className="main-profile-img" src={landpageimg} />
@@ -37,15 +57,15 @@ export function About() {
             </section>
         </section>
         <section className="flex-col flex-col-center flex-gap">
-            <p className="mayu-catchphrase">אנחנו כבר כל מה שאנחנו שואפים להיות. גם ברגעים הקשים, הטוב והיופי כבר בתוכנו- רק צריך לאפשר להם להתגלות </p>
+            <p className="mayu-catchphrase animated animatedFadeInUp fadeInUp">אנחנו כבר כל מה שאנחנו שואפים להיות. גם ברגעים הקשים, הטוב והיופי כבר בתוכנו- רק צריך לאפשר להם להתגלות </p>
             <img className="about-butterfly" src={butterfly} />
         </section>
-        <section className="about-gallery">
+        <section className="about-gallery animated animatedFadeInUp fadeInUp">
             <img className="about-gallery-img" src={sideleg} />
             <img className="about-gallery-img" src={notlooking} />
             <img className="about-gallery-img" src={tibetbowl} />
         </section>
-        <section className="about-sum-content flex-col flex-col-center flex-gap">
+        <section className="about-sum-content flex-col flex-col-center flex-gap animated animatedFadeInUp fadeInUp">
             <img className="about-butterfly" src={butterfly} />
             <h1 className="about-sum-title">קצת עליי</h1>
             <p dir="rtl" className="about-sum">אז אני מאיה, בת 27, במקור מחיפה.</p>

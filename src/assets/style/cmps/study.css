@@ -3,7 +3,7 @@
     flex-direction: column;
     gap: 3rem;
     place-items: center;
-    margin-block-start: 7rem;
+    margin-block-start: 5rem;
 }
 
 .study h1,
@@ -11,6 +11,7 @@
 .study h3,
 .study p {
     margin: 0;
+    text-align: center;
 }
 
 .study h1 {
@@ -23,51 +24,72 @@
     height: auto;
 }
 
-.study ul {
-    display: grid;
-    grid-template-columns: 1fr;
-    place-items: center;
-    gap: 2rem;
+.skill-slider {
+    position: relative;
+    width: 100%;
+    max-width: 1000px;
+    margin-block-end: 5rem;
+    position: relative;
 }
 
-.study ul li {
+.skill-slider .item  {
     display: flex;
     flex-direction: column;
-    text-align: center;
     place-items: center;
+    max-width: 100%;
 }
 
-.study ul li img {
-    width: 100%;
+.skill-slider .item h5 {
+    font-family: Montserrat-Medium;
+}
+
+.skill-slider .item img {
+    width: 80%;
+    height: auto;
     max-height: 350px;
     object-fit: cover;
+    margin: 0 auto 15px auto;
     mask-image: linear-gradient(to right, rgba(0, 0, 0, 0) 10%, rgba(0, 0, 0, 1) 60%, rgba(0, 0, 0, 0) 90%);
     -webkit-mask-image: linear-gradient(to right, rgba(0, 0, 0, 0) 10%, rgba(0, 0, 0, 1) 60%, rgba(0, 0, 0, 0) 90%);
 }
 
-.study ul li .top-img-position {
+.study .item .top-img-position {
     object-position: top;
 }
 
-.study ul li h2 {
+.study .item h2 {
     font-family: Amatic-Regular;
     font-size: 1.5rem;
     margin-block-start: 1rem;
 }
 
-.study ul li h3 {
+.study .item h3 {
     font-family: Amatic-Regular;
     font-size: 1rem;
 }
 
-.study ul li p {
+.study .item p {
     font-family: Fredoka-Light;
     max-width: 70%;
 }
 
-.study ul li .study-txt {
+.study .item .study-txt {
     display: flex;
     flex-direction: column;
     gap: 1rem;
     place-items: center;
+}
+
+
+
+@media (max-width: 700px) {
+    .skill-slider {
+        max-width: 300px;
+    }
+}
+
+@media (min-width: 700px) and (max-width: 1000px) {
+    .skill-slider {
+        max-width: 700px;
+    }
 }

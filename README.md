@@ -1,21 +1,23 @@
- My React Portfolio
+MayuWay Yoga
 
-Welcome to my React-based portfolio! This project showcases my skills, projects, and experiences as a frontend developer. It is built with React, and showcases modern web development practices such as component-based design, responsive layouts, and interactive UI elements.
+This is a frontend React application for a Yoga Instructor website. The website provides information about the instructor, their services, and offers a gallery of images, class details, and a contact section. It is designed to be responsive and optimized for both desktop and mobile users.
+
+Technologies:
+React.js - JavaScript library for building user interfaces.
+CSS - For styling and layout.
+React Router - For page navigation (if applicable).
+React Intersection Observer - For scroll-triggered animations (used for fade-in effects).
 
 Features
-Interactive UI: Features smooth animations and responsive design for a seamless experience.
-Projects Section: Display a list of projects with descriptions and links to GitHub or live demos.
-Skills Section: Showcases the technologies I have worked with.
-Mobile-Friendly: Fully responsive and optimized for both desktop and mobile devices.
-
-Technologies Used
-This project utilizes the following technologies:
-
-React: For building the interactive UI components.
-React Router: For navigating between different sections of the portfolio.
-CSS: For styling the portfolio.
+Home Page: Displays a welcome message, navigation links, and an introductory section about the instructor.
+About Section: Includes a detailed bio of the yoga instructor with images and a personal message.
+Gallery Section: Displays images related to yoga, classes, or the instructor's journey.
+Social Media Integration: Links to the instructor's social media profiles (e.g., Instagram, WhatsApp).
+Responsive Design: Optimized for desktop and mobile views.
+Scroll-triggered Animations: Sections fade in as the user scrolls through the page, providing a dynamic experience.
+Contact Section: Includes contact details and a contact form.
 
 Contributing
-Contributions are welcome! If you have suggestions, improvements, or bug fixes, feel free to fork the repository and submit a pull request. Please ensure your code adheres to the following:
+Contributions are welcome! If you have suggestions, improvements, or bug fixes, feel free to fork the repository and submit a pull request. 
 
 Contact For questions or feedback, feel free to reach out to me directly at: Email: miadarv@gmail.com

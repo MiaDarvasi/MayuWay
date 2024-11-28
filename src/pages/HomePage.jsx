@@ -7,7 +7,7 @@ import { Study } from '../cmps/Study.jsx'
 export function HomePage() {
     return <section id="home">
         <About />
-        <Services />
         <Study />
+        <Services />
     </section>
 }

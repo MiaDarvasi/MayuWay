@@ -63,6 +63,7 @@
     object-position: bottom;
     mask-image: linear-gradient(to right, rgba(0, 0, 0, 1) 0%, rgba(0, 0, 0, 0) 100%);
     -webkit-mask-image: linear-gradient(to right, rgba(0, 0, 0, 1) 0%, rgba(0, 0, 0, 0) 100%);
+    animation: fadeInRight 1.5s ease-in-out;
 }
 
 .about .mayu-catchphrase {
@@ -108,11 +109,22 @@
 }
 
 .about .about-gallery img:first-of-type {
-    object-position: left;    
+    object-position: left;
 }
 
 .about .about-gallery img:nth-of-type(2) {
-    object-position: right;    
+    object-position: right;
+}
+
+@keyframes fadeInRight {
+    from {
+        opacity: 0;
+        transform: translateX(300px);
+    }
+
+    to {
+        opacity: 1;
+    }
 }
 
 
@@ -124,8 +136,10 @@
     }
 
     .about .main-profile-img {
-        mask-image: none;
         border-radius: 50% 50% 0 0 / 80% 80% 10% 10%;
+        animation: none;
+        mask-image: linear-gradient(to bottom, rgba(0, 0, 0, 1) 0%, rgba(0, 0, 0, 0) 100%);
+        -webkit-mask-image: linear-gradient(to bottom, rgba(0, 0, 0, 1) 0%, rgba(0, 0, 0, 0) 100%);
     }
 
     .about .about-title .logo {

@@ -3,7 +3,7 @@
     flex-direction: column;
     place-items: center;
     gap: 3rem;
-    margin-block-start: 6rem;
+    margin-block-start: 5rem;
 }
 
 .services  h1 {
