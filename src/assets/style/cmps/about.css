@@ -47,7 +47,7 @@
 }
 
 .about .about-social img:hover {
-    background-color: rgb(72, 112, 67);
+    background-color: rgb(234, 197, 148);
     cursor: pointer;
 }
 
@@ -73,6 +73,10 @@
     margin: 0;
     /* margin-block: 2rem; */
 }
+
+/* .about .about-sum-content {
+    background-color: rgba(255, 255, 255, 0.5);
+} */
 
 .about .about-sum-content .about-sum {
     margin: 0;

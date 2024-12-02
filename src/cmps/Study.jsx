@@ -48,7 +48,7 @@ export function Study() {
     }, []);
 
     return (
-        <section className="study">
+        <section className="study" id="study">
             <section className="flex-col flex-col-center flex-gap animated animatedFadeInUp fadeInUp">
                 <img className="study-butterfly" src={butterfly} />
                 <h1>ההכשרות שעברתי</h1>

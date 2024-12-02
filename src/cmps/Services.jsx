@@ -26,8 +26,9 @@ export function Services() {
     }, []);
 
     return (
+        <section className="services-container full">
         <section className="services">
-            <section className="flex-col flex-col-center flex-gap animated animatedFadeInUp fadeInUp">
+            <section className="flex-col flex-col-center flex-gap animated animatedFadeInUp fadeInUp" id="services">
                 <img className="services-butterfly" src={butterfly} />
                 <h1>שירותים שאני מציעה</h1>
             </section>
@@ -55,6 +56,7 @@ export function Services() {
                 </li>
             </ul>
 
+        </section>
         </section>
     );
 }

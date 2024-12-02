@@ -9,6 +9,8 @@
 
 /* Pages */
 @import './pages/yoga.css';
+@import './pages/home.css';
+
 
 /* Cmps */
 @import './cmps/app-header.css';

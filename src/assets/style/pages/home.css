@@ -1,0 +1,8 @@
+.home {
+    display: grid;
+    grid-template-columns: minmax(20px, 1fr) minmax(auto, 1200px) minmax(20px, 1fr);
+}
+
+.home>* {
+    grid-column: 2;
+}

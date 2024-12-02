@@ -40,7 +40,7 @@ export function About() {
     }, []);
 
 
-    return <section className="about" id="about">
+    return <section className="about">
         <section className="about-top">
             <img className="main-profile-img" src={landpageimg} />
             <section className="about-title">
@@ -65,7 +65,7 @@ export function About() {
             <img className="about-gallery-img" src={notlooking} />
             <img className="about-gallery-img" src={tibetbowl} />
         </section>
-        <section className="about-sum-content flex-col flex-col-center flex-gap animated animatedFadeInUp fadeInUp">
+        <section className="about-sum-content flex-col flex-col-center flex-gap animated animatedFadeInUp fadeInUp" id="about">
             <img className="about-butterfly" src={butterfly} />
             <h1 className="about-sum-title">קצת עליי</h1>
             <p dir="rtl" className="about-sum">אז אני מאיה, בת 27, במקור מחיפה.</p>
