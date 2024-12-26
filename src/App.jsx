@@ -8,6 +8,7 @@ import { AppHeader } from './cmps/AppHeader.jsx'
 import { Connect } from './cmps/Connect.jsx'
 
 import { ScrollToTop } from './cmps/ScrollToTop.jsx';
+import { Watermark } from './cmps/Watermark.jsx';
 
 function App() {
   return (
@@ -20,6 +21,7 @@ function App() {
           <Route path="/yoga" element={<Yoga />} />
         </Routes>
         <Connect />
+        <Watermark />
       </div>
     </Router>
   );
